@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="script.js" />
+    <title>CV | Đoàn Quốc Việt</title>
+  </head>
+  <body class="">
+    <header class=""></header>
+    <section class="banner-top container-fluid">
+      <div class="banner-text">
+        <h1>Đoàn Quốc Việt</h1>
+        <span>Fullstack Developer</span>
+      </div>
+    </section>
+    <!--Navbar -->
+    <nav class="main-nav">
+      <ul class="main-nav-list t-upper main-nav-list-mobile">
+        <li class="main-nav-link">
+          <span class="icon-user color-m"></span>
+          <span>Thông Tin</span>
+        </li>
+        <li class="main-nav-link">
+          <span class="icon-doc-text-inv color-m color-m"></span>
+          Lý lịch
+        </li>
+        <li class="main-nav-link h-mobile-25">
+          <div class="nav-link-core t-none w-md-auto">
+            <div class="display-none">
+              <h2>Đoàn Quốc Việt</h2>
+              <span>Full Stack Deloper</span>
+            </div>
+            <div class="d-table-none">
+              <img src="images/default-avatar.png" alt="" />
+            </div>
+          </div>
+        </li>
+
+        <li class="main-nav-link">
+          <span class="icon-mail-alt color-m"></span> Chứng Chỉ
+        </li>
+        <li class="main-nav-link">
+          <span class="icon-star-1 color-m"></span> Dự Án
+        </li>
+      </ul>
+    </nav>
+    <!--Personal Target and Information -->
+    <section class="section-1">
+      <div class="general-info container-md w-100">
+        <div class="target container-fluid">
+          <h2 class="mb-20 mt-20">Mục tiêu nghề nghiệp</h2>
+          <p class="line-h-1-6 color-nd">
+            Hiện đang là sinh viên theo học chương trình kỹ sư phần mềm tại
+            FUNiX, tôi mong muốn được làm việc ở vị trí Fullstack Developer
+            trong tương lai. Tôi hy vọng có thể áp dụng kiến thức đã tích lũy và
+            luôn nỗ lực phát triển bản thân, nhằm hoàn thành xuất sắc mọi nhiệm
+            vụ được giao.
+          </p>
+        </div>
+        <div class="info container-fluid">
+          <h2 class="mb-20 mt-20">Thông tin cá nhân</h2>
+          <!-- Hãy nhập email để hiển thị thông tin -->
+          <div class="verify-email">
+            <form id="form">
+              <div class="form-group">
+                <input
+                  id="email"
+                  type=""
+                  class="my-2 form-control"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter Email"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >Hãy nhập email để hiển thị thông tin</small
+                >
+              </div>
+              <button
+                id="submit"
+                type="submit"
+                class="my-2 btn btn-primary submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          <div id="info" class="info-detail color-nd hide">
+            <p><span>Giới tính:</span> Nam</p>
+            <p><span>Ngày sinh:</span> 18/05/1992</p>
+            <p><span>Điện thoại:</span> (+84) 932174460</p>
+            <p><span>Email:</span> vietdqfx46894@funix.edu.vn</p>
+            <p><span>Địa chỉ:</span> TP. Hồ Chí Minh, Việt Nam</p>
+            <p><span>Website:</span> https://doanviet.com/</p>
+
+            <ul class="li-none df mt-20 px-sm-0">
+              <li><span class="color-m icon-twitter"></span></li>
+              <li><span class="color-m icon-facebook"></span></li>
+              <li><span class="color-m icon-gplus"></span></li>
+              <li><span class="color-m icon-linkedin"></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--06 Objects -->
+    <section class="py-4">
+      <div class="object-start">
+        <!-- Kinh Nghiệm -->
+        <div class="card rounded-0 p-4 shadow-sm mb-1">
+          <div
+            class="df aic mb-20 jcsb"
+            onmouseover="showViewMore(this)"
+            onmouseout="holdViewMore(this)"
+          >
+            <div class="d-inline">
+              <div class="d-flex jcsb">
+                <h3 class="me-4">Kinh nghiệm</h3>
+                <span class="ic-toolbox fs-38 color-nd"></span>
+              </div>
+              <!-- Show & Hide -->
+              <div id="showExperience" class="hide">
+                <button
+                  type="button"
+                  onclick="showExperience()"
+                  class="btn btn-warning rounded-pill pe-4"
+                >
+                  <span class="px-2"><i class="bi bi-caret-down-fill"></i></span
+                  >View More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="experience" class="line-h-1-4 hide">
+            <ul class="objects-details">
+              <li class="fw-bold">Nhân Viên Marketing - CTY Băng Keo</li>
+              <p class="color-nd">
+                05/2022 -
+                <span class="bg-color-st border-radius-30"
+                  ><span class="pl-16 pr-16 color-white fs-italic"
+                    >Hiện tại</span
+                  ></span
+                >
+              </p>
+              <li class="li-none color-nd">
+                - Quản lý sự hiện diện trực tuyến của công ty, bao gồm tối ưu
+                hóa trang web, tối ưu hóa công cụ tìm kiếm (SEO) và quản lý
+                phương tiện truyền thông xã hội.
+              </li>
+              <li class="li-none color-nd">
+                - Thực hiện các kế hoạch định giá sản phẩm cùng team, lên kế
+                hoạch làm thông tin quảng bá.
+              </li>
+              <li class="li-none mb-20 color-nd">
+                - Phụ trách nội dung website, thiết kế hình ảnh quảng cáo, làm
+                video giới thiệu sản phẩm
+              </li>
+
+              <li class="fw-bold">Nhân Viên Marketing - CTY TNHH CDEXIM</li>
+              <p class="fs-italic color-nd">06/2021 - 04/2022</p>
+              <li class="li-none color-nd">
+                - Tương tác với khách hàng trên website và các trang mạng xã
+                hội.
+              </li>
+              <li class="li-none color-nd">
+                - Chạy quảng cáo Facebook, Google, Youtube.
+              </li>
+            </ul>
+          </div>
+          <div id="hideExperience" class="hide">
+            <button
+              type="button"
+              onclick="hideExperience()"
+              class="btn btn-warning rounded-pill pe-4"
+            >
+              <span class="px-2"><i class="bi bi-caret-up-fill"></i></span>View
+              Less
+            </button>
+          </div>
+        </div>
+        <!-- Học Vấn -->
+        <div class="card rounded-0 p-4 shadow-sm mb-1">
+          <div
+            class="aic mb-20 jcsb"
+            onmouseover="showEduViewMore(this)"
+            onmouseout="holdEduViewMore(this)"
+          >
+            <div class="d-inline">
+              <div class="d-flex jcsb">
+                <h3 class="me-4">Học vấn</h3>
+                <span class="ic-pencil fs-38 color-nd"></span>
+              </div>
+              <div id="showEducation" class="hide">
+                <button
+                  type="button"
+                  onclick="showEducation()"
+                  class="btn btn-warning rounded-pill pe-4"
+                >
+                  <span class="px-2"><i class="bi bi-caret-down-fill"></i></span
+                  >View More
+                </button>
+              </div>
+            </div>
+            <!-- Show & Hide -->
+          </div>
+          <div id="education" class="line-h-1-4 hide">
+            <ul class="objects-details">
+              <li class="fw-bold">FUNiX</li>
+              <p class="fs-italic color-nd">10/2024 - Nay</p>
+              <li class="li-none color-nd">- Khóa học Kỹ Sư Phần Mềm</li>
+              <li class="li-none mb-20 color-nd">- Đang Theo Học</li>
+              <li class="fw-bold">Cử nhân - ĐH Kinh Tế</li>
+              <p class="fs-italic color-nd">10/2019 - 08/2022</p>
+              <li class="li-none color-nd">- Chuyên ngành: Ngôn Ngữ Anh</li>
+              <li class="li-none color-nd">- GPA: 8 / 10</li>
+            </ul>
+          </div>
+          <div id="hideEducation" class="hide">
+            <button
+              type="button"
+              onclick="hideEducation()"
+              class="btn btn-warning rounded-pill pe-4"
+            >
+              <span class="px-2"><i class="bi bi-caret-up-fill"></i></span>View
+              Less
+            </button>
+          </div>
+        </div>
+        <!-- Hoạt Động -->
+        <div class="card rounded-0 p-4 shadow-sm mb-1">
+          <div
+            class="aic mb-20 jcsb"
+            onmouseover="showActivityViewMore(this)"
+            onmouseout="holdActivityViewMore(this)"
+          >
+            <div class="d-inline">
+              <div class="d-flex jcsb">
+                <h3 class="me-4">Hoạt Động</h3>
+                <span class="ic-toolbox fs-38 color-nd"></span>
+              </div>
+              <div id="showActivity" class="hide">
+                <button
+                  type="button"
+                  onclick="showActivity()"
+                  class="btn btn-warning rounded-pill pe-4"
+                >
+                  <span class="px-2"><i class="bi bi-caret-down-fill"></i></span
+                  >View More
+                </button>
+              </div>
+            </div>
+            <!-- Show & Hide -->
+          </div>
+          <div id="activity" class="line-h-1-4 hide">
+            <ul class="objects-details">
+              <li class="fw-bold">Câu lạc bộ Hướng Dẫn Viên</li>
+              <p class="fs-italic color-nd">08/2018 - 08/2020</p>
+              <li class="li-none mb-20 color-nd">- Chuyên Tour Inbound</li>
+
+              <li class="fw-bold">CLB Người Dẫn Chương Trình</li>
+              <p class="fs-italic color-nd">03/2013 - 01/2019</p>
+              <li class="li-none color-nd">- Thành Viên Ban Tổ Chức</li>
+            </ul>
+          </div>
+          <div id="hideActivity" class="hide">
+            <button
+              type="button"
+              onclick="hideActivity()"
+              class="btn btn-warning rounded-pill pe-4"
+            >
+              <span class="px-2"><i class="bi bi-caret-up-fill"></i></span>View
+              Less
+            </button>
+          </div>
+        </div>
+        <!-- Sở Thích -->
+        <div class="card rounded-0 p-4 shadow-sm mb-1">
+          <div
+            class="aic mb-20 jcsb"
+            onmouseover="showHobbyViewMore(this)"
+            onmouseout="holdHobbyViewMore(this)"
+          >
+            <div class="d-inline">
+              <div class="d-flex jcsb">
+                <h3 class="me-4">Sở Thích</h3>
+                <span class="ic-telescope fs-38 color-nd"></span>
+              </div>
+              <div id="showHobby" class="hide">
+                <button
+                  type="button"
+                  onclick="showHobby()"
+                  class="btn btn-warning rounded-pill pe-4"
+                >
+                  <span class="px-2"><i class="bi bi-caret-down-fill"></i></span
+                  >View More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="hobby" class="hobby-li hide">
+            <div class="hobby-details mx-0 px-0">
+              <div class="hobby-type">
+                <div class="hobby-type-single">
+                  <div class="hobby-icon">
+                    <span class="hobby-icon-border">
+                      <span class="ic-megaphone"></span>
+                    </span>
+                  </div>
+                  <div class="hobby-title">
+                    <p class="color-nd">Thiết Kế</p>
+                  </div>
+                </div>
+                <div class="hobby-type-single">
+                  <div class="hobby-icon">
+                    <span class="hobby-icon-border">
+                      <span class="ic-strategy"></span>
+                    </span>
+                  </div>
+                  <div class="hobby-title">
+                    <p class="color-nd">Chơi game</p>
+                  </div>
+                </div>
+                <div class="hobby-type-single">
+                  <div class="hobby-icon">
+                    <span class="hobby-icon-border">
+                      <span class="ic-hotairballoon"></span>
+                    </span>
+                  </div>
+                  <div class="hobby-title">
+                    <p class="color-nd">Du lịch</p>
+                  </div>
+                </div>
+                <div class="hobby-type-single">
+                  <div class="hobby-icon">
+                    <span class="hobby-icon-border">
+                      <span class="ic-basket"></span>
+                    </span>
+                  </div>
+                  <div class="hobby-title">
+                    <p class="color-nd">Đọc Sách</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="hideHobby" class="hide">
+            <button
+              type="button"
+              onclick="hideHobby()"
+              class="btn btn-warning rounded-pill pe-4"
+            >
+              <span class="px-2"><i class="bi bi-caret-up-fill"></i></span>View
+              Less
+            </button>
+          </div>
+        </div>
+        <!-- Ngôn ngữ -->
+        <div class="card rounded-0 p-4 shadow-sm mb-1">
+          <div
+            class=""
+            onmouseover="showLanguageViewMore(this)"
+            onmouseout="holdLanguageViewMore(this)"
+          >
+            <div class="df aic mb-20 jcsb">
+              <h3 class="mr-60">Ngôn Ngữ</h3>
+              <span class="ic-mic fs-38 color-nd"></span>
+            </div>
+            <div id="showLanguage" class="hide">
+              <button
+                type="button"
+                onclick="showLanguage()"
+                class="btn btn-warning rounded-pill pe-4"
+              >
+                <span class="px-2"><i class="bi bi-caret-down-fill"></i></span
+                >View More
+              </button>
+            </div>
+          </div>
+          <div id="language" class="level hide">
+            <div class="level-item-1">
+              <div class="level-item-title">Tiếng Anh</div>
+              <div class="level-bar df">
+                <div class="level-bar-1"></div>
+                <div class="level-bar-1"></div>
+                <div class="level-bar-2"></div>
+              </div>
+            </div>
+            <div class="level-item-1">
+              <div class="level-item-title">Tiếng Trung</div>
+              <div class="level-bar df">
+                <div class="level-bar-1"></div>
+                <div class="level-bar-2"></div>
+                <div class="level-bar-2"></div>
+              </div>
+            </div>
+          </div>
+          <div id="hideLanguage" class="hide">
+            <button
+              type="button"
+              onclick="hideLanguage()"
+              class="btn btn-warning rounded-pill pe-4"
+            >
+              <span class="px-2"><i class="bi bi-caret-up-fill"></i></span>View
+              Less
+            </button>
+          </div>
+        </div>
+        <!-- Kỹ năng -->
+        <div class="card rounded-0 p-4 shadow-sm mb-1">
+          <div
+            class=""
+            onmouseover="showSkillsViewMore(this)"
+            onmouseout="holdSkillsViewMore(this)"
+          >
+            <div class="df aic mb-20 jcsb">
+              <h2 class="mr-60">Kỹ Năng</h2>
+              <span class="ic-tools-2 fs-38 color-nd"></span>
+            </div>
+            <div id="showSkills" class="hide">
+              <button
+                type="button"
+                onclick="showSkills()"
+                class="btn btn-warning rounded-pill pe-4"
+              >
+                <span class="px-2"><i class="bi bi-caret-down-fill"></i></span
+                >View More
+              </button>
+            </div>
+          </div>
+          <div id="skills" class="level hide">
+            <div class="level-item-1">
+              <div class="level-item-title">MS PowerPoint: Intermediate</div>
+              <div class="level-bar df">
+                <div class="level-bar-1"></div>
+                <div class="level-bar-1"></div>
+                <div class="level-bar-2"></div>
+              </div>
+            </div>
+            <div class="level-item-1">
+              <div class="level-item-title">MS Word: Fundamental</div>
+              <div class="level-bar df">
+                <div class="level-bar-1"></div>
+                <div class="level-bar-2"></div>
+                <div class="level-bar-2"></div>
+              </div>
+            </div>
+            <div class="level-item-1">
+              <div class="level-item-title">
+                CorelDRAW Graphics: Intermediate
+              </div>
+              <div class="level-bar df">
+                <div class="level-bar-1"></div>
+                <div class="level-bar-1"></div>
+                <div class="level-bar-2"></div>
+              </div>
+            </div>
+            <div class="level-item-1">
+              <div class="level-item-title">Adobe Premiere: Fundamental</div>
+              <div class="level-bar df">
+                <div class="level-bar-1"></div>
+                <div class="level-bar-2"></div>
+                <div class="level-bar-2"></div>
+              </div>
+            </div>
+          </div>
+          <div id="hideSkills" class="hide">
+            <button
+              type="button"
+              onclick="hideSkills()"
+              class="btn btn-warning rounded-pill pe-4"
+            >
+              <span class="px-2"><i class="bi bi-caret-up-fill"></i></span>View
+              Less
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Certification and Awards -->
+    <section class="background-2 py-4">
+      <div class="certification-title container-sm-fluid">
+        <h2 class="ms-5 ms-sm-5">Chứng Chỉ - Giải Thưởng</h2>
+        <div class="certification-start mx-5">
+          <div class="cert">
+            <div class="">
+              <img class="" src="images/TourGuide_License.jpg" alt="" />
+            </div>
+            <div class="cert-details">
+              <p class="t-upper">Thẻ Hướng Dẫn Viên Quốc Tế</p>
+              <ul class="color-nd ps-0">
+                <li>Sở Du Lịch TP. Hồ Chí Minh</li>
+                <li>Loại thẻ: Quốc Tế</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cert timeline cert-border">
+            <div class="">
+              <img class="" src="images/mos_ppt.jpg" alt="" />
+            </div>
+            <div class="cert-details">
+              <p class="t-upper">MOS World Championship</p>
+              <ul class="color-nd ps-0">
+                <li>Chứng chỉ thuộc Microsoft</li>
+                <li>MS PowerPoint</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="border-line mx-5"></div>
+        <div class="certification-start mx-5">
+          <div class="cert cert-border">
+            <div class="">
+              <img class="" src="images/MasterCeremony.jpg" alt="" />
+            </div>
+            <div class="cert-details">
+              <p class="t-upper">Chứng Chỉ Người Dẫn Chương Trình</p>
+              <ul class="color-nd ps-0">
+                <li>Chứng chỉ thuộc Nhà Văn Hóa Thanh Niên</li>
+                <li>Loại: Xuất sắc</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Projects -->
+    <section class="background-3 py-4">
+      <div class="certification-title container-sm-fluid">
+        <h2 class="ms-5 ms-sm-5">Dự Án</h2>
+        <div class="project-start mx-5">
+          <div class="card me-2 mb-4 rounded-0">
+            <a href="./projects/cv.html">
+              <img class="img-thumbnail" src="./images/CV-profile.jpg" alt="" />
+            </a>
+
+            <div class="project-name container border-bottom">CV CÁ NHÂN</div>
+            <div class="project-sub border-bottom py-2 mx-2">
+              <div class="me-md-1">
+                <h6>
+                  <span class="badge bg-color-st me-2 rounded-pill px-md-3"
+                    >2024</span
+                  >
+                </h6>
+              </div>
+              <div class="project-date-details">
+                <div class="df">
+                  <div class="icon-user-1 me-1"></div>
+                  <div class="me-1">FUNiX</div>
+                </div>
+                <div class="df">
+                  <div class="icon-lamp me-1"></div>
+                  <div>Sinh Viên</div>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <table class="">
+                <tr class="border-bottom">
+                  <th class="table-title">Mô tả</th>
+                  <th class="table-details">
+                    Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng
+                    như kỹ năng nghề nghiệp.
+                  </th>
+                </tr>
+                <tr class="border-bottom">
+                  <th class="table-title">Nhiệm vụ</th>
+                  <th class="table-details">Viết Code HTML, CSS căn bản.</th>
+                </tr>
+                <tr class="">
+                  <th class="table-title">Công nghệ</th>
+                  <th class="table-details">HTML, CSS.</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card me-2 mb-4 rounded-0">
+            <a href="./projects/website.html">
+              <img class="img-thumbnail" src="images/project_2.png" alt="" />
+            </a>
+            <div class="project-name container border-bottom">
+              QUẢN TRỊ WEBSITE CÔNG TY
+            </div>
+            <div class="project-sub border-bottom py-2 mx-2">
+              <div class="me-md-0">
+                <h6>
+                  <span class="badge bg-color-st me-2 rounded-pill px-md-3"
+                    >2022</span
+                  >
+                </h6>
+              </div>
+              <div class="project-date-details">
+                <div class="df">
+                  <div class="icon-user-1 me-1"></div>
+                  <div class="me-1">Nhân Viên</div>
+                </div>
+                <div class="df">
+                  <div class="icon-lamp me-1"></div>
+                  <div>Marketing</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <table class="">
+                <tr class="border-bottom">
+                  <th class="table-title">Mô tả</th>
+                  <th class="table-details">
+                    Google Analytics, Photoshop, CorelDRAW
+                  </th>
+                </tr>
+                <tr class="border-bottom">
+                  <th class="table-title">Nhiệm vụ</th>
+                  <th class="table-details">
+                    Thiết kế hình ảnh, nội dung và tối ưu hóa website
+                  </th>
+                </tr>
+                <tr class="">
+                  <th class="table-title">Công nghệ</th>
+                  <th class="table-details">Google Analytics, Photoshop</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card me-2 mb-4 rounded-0">
+            <a href="./projects/freelance.html">
+              <img
+                class="img-thumbnail"
+                src="images/project_3.png"
+                alt="Card image cap"
+              />
+            </a>
+            <div class="project-name container border-bottom">
+              MARKETING ONLINE
+            </div>
+            <div class="project-sub border-bottom py-2 mx-2">
+              <div class="me-md-0">
+                <h6>
+                  <span class="badge bg-color-st me-2 rounded-pill px-md-3"
+                    >2020</span
+                  >
+                </h6>
+              </div>
+              <div class="project-date-details">
+                <div class="df">
+                  <div class="icon-user-1 me-1"></div>
+                  <div class="me-1">Freelancer</div>
+                </div>
+                <div class="df">
+                  <div class="icon-lamp me-1"></div>
+                  <div>Marketing</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <table class="">
+                <tr class="border-bottom">
+                  <th class="table-title">Mô tả</th>
+                  <th class="table-details">
+                    Nội dung website, thiết kế hình ảnh, làm video giới thiệu
+                    sản phẩm
+                  </th>
+                </tr>
+                <tr class="border-bottom">
+                  <th class="table-title">Nhiệm vụ</th>
+                  <th class="table-details">
+                    Hỗ trợ khách hàng tiềm năng dùng thử sản phẩm và chốt giá
+                  </th>
+                </tr>
+                <tr class="">
+                  <th class="table-title">Công nghệ</th>
+                  <th class="table-details">Google Analytics, Photoshop</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social bg-color-nd container-fluid">
+        <ul class="social-start li-none">
+          <a href="https://www.facebook.com/maximusdoan0607" target="_blank">
+            <li class="df aic mr-20">
+              <div class="social-icon">
+                <span class="border-icon">
+                  <i class="icon-facebook"></i>
+                </span>
+              </div>
+              Facebook
+            </li>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/maximus-doan-918a04218/"
+            target="_blank"
+          >
+            <li class="df aic mr-20">
+              <div class="social-icon">
+                <span class="border-icon">
+                  <i class="icon-linkedin"></i>
+                </span>
+              </div>
+              Linkedin
+            </li>
+          </a>
+          <a href="https://github.com/doanviet155" target="_blank">
+            <li class="df aic mr-20">
+              <div class="social-icon">
+                <span class="border-icon">
+                  <i class="icon-github"></i>
+                </span>
+              </div>
+              Github
+            </li>
+          </a>
+        </ul>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
