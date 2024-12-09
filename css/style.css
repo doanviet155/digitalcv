@@ -1,0 +1,295 @@
+/* Bootstrap CSS */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'fontello', sans-serif;
+  font-size: 1rem;
+}
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+.w50 {
+  width: 50px;
+}
+
+/* padding */
+.pl-16 {
+  padding-left: 16px;
+}
+
+.pl-90 {
+  padding-left: 90px;
+}
+
+.pr-16 {
+  padding-right: 16px;
+}
+/* border-radius */
+.border-radius-30 {
+  border-radius: 30px;
+}
+/* margin collection */
+.mdefault {
+  margin: 0 auto;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.mr-40 {
+  margin-right: 40px;
+}
+
+.mr-60 {
+  margin-right: 60px;
+}
+
+/* line-height */
+.line-h-1-4 {
+  line-height: 1.4;
+}
+.line-h-1-6 {
+  line-height: 1.6;
+}
+
+/* font-size collection*/
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-18 {
+  font-size: 12px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.fs-38 {
+  font-size: 38px;
+}
+/* font-weight */
+.fw-bold {
+  font-weight: bold;
+}
+.fs-italic {
+  font-style: italic;
+}
+
+.li-none {
+  list-style-type: none;
+}
+/* display collection*/
+.display-none {
+  display: none;
+}
+.df {
+  display: flex;
+}
+.dg {
+  display: grid;
+}
+.d-inline {
+  display: inline;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 14px;
+  row-gap: 14px;
+  grid-auto-columns: auto;
+}
+
+/* justify-content */
+.jcsb {
+  justify-content: space-between;
+}
+.aic {
+  align-items: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+
+/* colors collection */
+.color-white {
+  color: #fff;
+}
+.color-m {
+  color: #0abfec;
+}
+.color-nd {
+  color: #646464;
+}
+.bg-color-st {
+  background-color: #0abfec;
+}
+.bg-color-nd {
+  background-color: #e9e9e9;
+}
+/* text transform*/
+.t-upper {
+  text-transform: uppercase;
+}
+.t-none {
+  text-transform: none;
+}
+/* text align */
+.t-align-c {
+  text-align: center;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS END*/
+/**************************/
+
+.banner-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.banner-text span {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #8f8b8b;
+}
+
+.main-nav-link ul,
+li {
+  align-content: center;
+}
+
+.nav-link-core {
+  text-align: center;
+  width: 150px;
+}
+
+.nav-link-core span {
+  text-align: center;
+  font-size: 14px;
+  padding: 0 auto;
+}
+
+.nav-link-core img {
+  background-position: top;
+  margin-top: -90px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: -80px;
+  position: absolute;
+  width: auto;
+  height: 150px;
+  border: solid 5px #ffff;
+  border-radius: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+}
+
+.info span {
+  font-weight: bold;
+}
+
+.info-detail p {
+  margin-bottom: 6px;
+}
+.background-1 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 950px;
+  margin: 0 auto;
+}
+
+.card {
+  border: #d8d8d8 1px solid;
+}
+
+.card li::marker {
+  color: #0abfec;
+  font-size: 22px;
+}
+
+.card-border {
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.hobby-li p {
+  margin-top: 4px;
+}
+
+.hobby-li span {
+  color: #0abfec;
+  font-size: 22px;
+  margin: 0.5rem;
+}
+.hobby-li-1 {
+  margin-right: 5px;
+}
+.hobby-details {
+  display: flex;
+}
+
+.hobby-icon {
+  display: flex;
+}
+.hobby-icon-border {
+  border: 1px solid #0abfec;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.level-item-1 {
+  margin-bottom: 16px;
+}
+.level-item-title {
+  margin-bottom: 20px;
+}
+.level {
+  margin-top: 28px;
+}
+.level-bar-1 {
+  border: 1px solid #0abfec;
+  width: 50px;
+  margin-right: 10px;
+}
+.level-bar-2 {
+  border: 1px solid #c9c7c7;
+  width: 50px;
+  margin-right: 10px;
+}
+
